@@ -3,7 +3,7 @@ using namespace std;
 void insertion(int arr[10], int){
 
 }
-int main(){
+int main(){  
     int arrr[10];
 
 }
