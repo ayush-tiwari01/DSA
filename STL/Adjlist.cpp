@@ -1,0 +1,26 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    int N,E;
+    cout<<"enter the number of vertices in the graph"<<endl;
+    cin>>N;
+    cout<<"enter the  number of edges in the graph";
+    cin>>E;
+    vector<int>adj[N];
+    for(int i=1;i<=E;i++){
+        cout<<"enter the edges"<<i<<" ";
+        int a,b;
+        cin>>a>>b;
+        adj[a].push_back(b);
+        adj[b].push_back(a);
+    }
+    for(int i=0;i<N;i++){
+        cout<<i<<":";
+        for(int j=0;j<adj[i].size();j++){
+            cout<<adj[i][j]<<",";
+        }
+        cout<<endl;
+    }
+    
+}
